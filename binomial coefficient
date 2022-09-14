@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int factorial(int n){
+	if(n==0){
+		return 1;
+	}
+	else{
+		return (n*factorial(n-1));
+	}
+}
+
+int  bcof(int n,int r){
+	if(r==0){
+		return 1;
+	}
+	else{
+	return factorial(n)/(factorial(n-r)*factorial(r));
+	}
+}
+int main(){
+    cout<< bcof(5,3);
+	return 0;
+}
