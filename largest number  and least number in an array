@@ -1,0 +1,14 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+void misnum(int a[],int n){
+	sort(a,a+n);
+     cout<<a[0]<<endl;
+     cout<<a[n-1]<<endl;
+}
+
+
+int main(){
+	int c[]= {3,4,2,7};
+	misnum(c,4);
+}
