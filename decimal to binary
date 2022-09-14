@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int btod(int n){
+	int sum=0,power=1;
+	while(n!=0){
+		int k=n%2;
+		sum=sum+(power*k);
+		power=(power*10);
+		n=n/2;
+	}
+		return sum ;
+}
+int main(){
+	cout<<btod(72);
+	return 0;
+}
