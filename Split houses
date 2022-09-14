@@ -1,0 +1,32 @@
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	string s;
+	cin>>s;
+	int flag=1;
+	for(int i=0;i<n;i++){
+		if(s[i]=='H' && s[i+1]=='H'){
+			flag=0;
+			break;
+		}
+		else{
+			continue;
+		}
+	}
+	if(flag==0){
+		cout<<"NO"<<endl;
+	}
+	else if(flag==1){
+		cout<<"YES"<<endl;
+		for(int i=0;i<n;i++){
+			if(s[i]=='.'){
+				s[i]='B';
+			}
+		}
+		cout<<s<<endl;
+	}
+}
