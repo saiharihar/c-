@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;
+    string str;
+    int t =0;
+    while( t != T){
+        cin >> str;
+        t++;    
+    int arr[10] = {6,2,5,5,4,5,6,3,7,6};
+    int m = str.size();
+    int a[m];
+    
+    for(int i = 0; i<m; i++){
+        a[i] = str[i] - '0';
+    } 
+    
+    int sum = 0;
+    for( int i = 0; i<m; i++){
+        sum += arr[a[i]];
+    }
+    while(sum != 0){
+        if(sum%2 != 0){
+            sum -= 3;
+            cout << 7;
+        }
+        else{
+            sum -= 2;
+            cout << 1;
+        }   
+    }
+    cout << endl;
+    }
+}
