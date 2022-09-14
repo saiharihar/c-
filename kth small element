@@ -1,0 +1,16 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+void ksmall(int a[],int n,int k){
+	sort(a,a+n);
+cout<<a[k-1];
+     
+}
+
+
+int main(){
+	int c[]= {14,6,1,47,56};
+	int l;
+	cin>>l;
+	ksmall(c,5,3);
+}
