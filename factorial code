@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+ class hari{
+ public:
+ int n;
+ void getdata(){
+	 cin>>n;
+ }
+ void factorial(){
+	 for(int i=n-1;i>=1;i--){
+        n=n*i;
+	 }
+	 cout<<n<<endl;
+ }
+ };
+ int main(){
+	 hari h;
+	 h.getdata();
+	 h.factorial();
+ }
